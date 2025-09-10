@@ -8,11 +8,9 @@ menuButton.addEventListener("click", () => {
         ul.style.display = "inline-flex";
         ul.classList.add("menu-tabs-links-show");
         ul.classList.remove("menu-tabs-links-hidden");
-        //menuButton.classList.add("menu-button-active");
-    }else {
+    } else {
         ul.classList.remove("menu-tabs-links-show");
         ul.classList.add("menu-tabs-links-hidden");
         setTimeout(() => ul.style.display = "none", 250);
-        //menuButton.classList.remove("menu-button-active");
     }
 });
