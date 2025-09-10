@@ -43,15 +43,55 @@ html {
     text-shadow: 4px 4px 5px rgba(0, 0, 0, 0.25);
 }
 
+#header-container #menu-container {
+    display: flex;
+    gap: 10px;
+    transition: .3s ease-in-out;
+    align-items: center;
+    justify-content: center;
+}
+
+#header-container #menu-container #menu-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .3s ease-in-out;
+}
+
+.menu-button-active {
+    background-color: #2563EB;
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+}
+
+.menu-tabs-links-show {
+    animation: animUlMenuShow .3s ease-in-out;
+}
+
+.menu-tabs-links-hidden {
+    animation: animUlMenuHidden .3s ease-in-out;
+}
+
+@keyframes animUlMenuHidden {
+    0% { opacity: 100%; }
+    100% { opacity: 0%;}
+}
+
+@keyframes animUlMenuShow {
+    0% { opacity: 0%; }
+    100% { opacity: 100%;}
+}
+
 #header-container #links-tabs ul {
-    display: inline-flex;
-    display: inline-flex;
+    /* display: inline-flex; */
+    display: none;
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
     gap: 30px;
     list-style: none;
     flex-wrap: wrap;
+    transition: .3s ease-in-out;
 }
 
 #header-container #links-tabs ul li a {
