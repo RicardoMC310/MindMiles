@@ -120,3 +120,64 @@ html {
     text-align: center;
     text-shadow: 4px 4px 5px rgba(0, 0, 0, 0.25);
 }
+
+/* NOTE: Cards Style */
+
+#second-cards {
+    padding: 2em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#second-cards .card {
+    background: #f9f9f9;
+    /* fundo branco */
+    border-radius: 1rem;
+    /* cantos arredondados */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    /* sombra suave */
+    overflow: hidden;
+    /* garante que nada vaze */
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 45dvw;
+    min-width: 400px;
+}
+
+#second-cards .card:hover {
+    transform: translateY(-5px) scale(1.01);
+    /* efeito de “levantar” */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+#second-cards .card-header {
+    background: #2563EB;
+    /* azul vibrante (paleta 1) */
+    color: #ffffff;
+    padding: 1rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+#second-cards .card-header h1 {
+    font-size: 2rem;
+}
+
+#second-cards .card-body {
+    padding: 1rem 1.25rem;
+    color: #374151;
+    /* cinza escuro */
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+#second-cards .card-body p {
+    text-align: center;
+    font-weight: 500;
+}
