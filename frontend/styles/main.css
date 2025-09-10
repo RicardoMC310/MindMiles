@@ -58,6 +58,10 @@ html {
     transition: .3s ease-in-out;
 }
 
+#header-container #menu-container #menu-button:hover {
+    transform: scale(1.05);
+}
+
 .menu-button-active {
     background-color: #2563EB;
     box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.25);
