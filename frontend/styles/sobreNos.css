@@ -128,6 +128,48 @@ html {
     width: 100%;
 }
 
+/* NOTE: Main Style */
+#first-explication {
+    background-color: #10B981;
+    padding: 2em;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#first-explication img {
+    width: 25dvw;
+    min-width: 300px;
+    border-radius: 30px;
+    filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.4));
+    transition: transform 0.3s ease, filter 0.3s ease-in-out;
+}
+
+#first-explication img:hover {
+    transform: scale(1.05) rotate(2.75deg);
+    /* leve zoom e rotação */
+    filter: drop-shadow(6px 6px 15px rgba(0, 0, 0, 0.5));
+}
+
+#first-explication #first-explication-text {
+    color: white;
+    filter: drop-shadow(4px 4px 5px rgba(0, 0, 0, 0.35));
+    max-width: 45dvw;
+    min-width: 300px;
+}
+
+#first-explication #first-explication-text h1 {
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 1.75rem;
+}
+
+#first-explication #first-explication-text p {
+    font-size: 1.35rem;
+}
+
+/* NOTE: Footer Style */
 footer {
     padding: .45em;
     background-color: #10B981;
