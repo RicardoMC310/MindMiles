@@ -265,6 +265,7 @@ html {
     filter: drop-shadow(4px 4px 5px rgba(0, 0, 0, 0.35));
 }
 
+/* NOTE: Footer Style */
 footer {
     padding: .45em;
     background-color: #10B981;
