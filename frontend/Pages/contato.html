@@ -7,6 +7,7 @@
     <title>MindMiles - Contato</title>
     <link rel="shortcut icon" href="../Assets/IMGS/icon.png" type="image/png">
     <link rel="stylesheet" href="../styles/globals.css">
+    <link rel="stylesheet" href="../styles/contato.css">
 </head>
 
 <body>
@@ -32,7 +33,35 @@
         </nav>
     </header>
 
+    <main>
+
+        <section id="form-contact-container">
+            <h1>Converse Conosco</h1>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" name="name" minlength="0" maxlength="255" required 
+                placeholder="name here"/>
+
+                <label for="email">Email:</label>
+                <input type="email" name="email" minlength="10" maxlength="255" required 
+                placeholder="exemplo@gmail.com"/>
+
+                <label for="content">Content:</label>
+                <textarea name="content" cols="30" rows="10" required
+                placeholder="content here"></textarea>
+
+                <input type="submit" value="Enviar">
+            </form>
+        </section>
+
+    </main>
+
+    <footer role="contentinfo" aria-label="Rodapé">
+        <p>&copy; 2025 MindMiles. Todos os direitos reservados.</p>
+    </footer>
+
     <script src="../scripts/main.js"></script>
+    <script src="../scripts/contato.js"></script>
 </body>
 
 </html>
