@@ -33,10 +33,6 @@ html {
     flex-wrap: wrap;
 }
 
-#header-container #img-name img {
-    filter: drop-shadow(4px 4px 5px rgba(0, 0, 0, 0.25));
-}
-
 #header-container #img-name h2 {
     color: white;
     font-size: 2rem;
@@ -161,6 +157,12 @@ html {
 #first-img-title #img-explication img {
     width: 45dvw;
     filter: drop-shadow(4px 4px 5px rgba(0, 0, 0, 0.35));
+    transition: .3s ease-in-out;
+}
+
+#first-img-title #img-explication img:hover {
+    filter: drop-shadow(6px 6px 5px rgba(0, 0, 0, 0.5));
+    transform: translateY(-5%) scale(105%);
 }
 
 #first-img-title #img-explication h3 {
@@ -229,4 +231,36 @@ html {
 #second-cards .card-body p {
     text-align: center;
     font-weight: 500;
+}
+
+#third-brief-explication {
+    padding: 2em;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 10px;
+    background-color: #10B981;
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.25);
+}
+
+#third-brief-explication #first-layer,
+#third-brief-explication #second-layer {
+    color: white;
+    width: 45dvw;
+    min-width: 300px;
+}
+
+#third-brief-explication #first-layer h2,
+#third-brief-explication #second-layer h2 {
+    text-align: center;
+    margin-bottom: 10px;
+    filter: drop-shadow(4px 4px 5px rgba(0, 0, 0, 0.35));
+    font-size: 1.45rem;
+}
+
+#third-brief-explication #first-layer p,
+#third-brief-explication #second-layer p {
+    filter: drop-shadow(4px 4px 5px rgba(0, 0, 0, 0.35));
 }
