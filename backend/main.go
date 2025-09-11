@@ -18,7 +18,7 @@ func main() {
 	app := fiber.New()
 	app.Use(cors.New())
 
-	routes.CompanyRoutes(app)
+	routes.ContactsRouter(app)
 
 	port := utils.GetEnv("PORT")
 	if port == "" {
