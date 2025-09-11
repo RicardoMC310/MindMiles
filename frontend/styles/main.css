@@ -264,3 +264,11 @@ html {
 #third-brief-explication #second-layer p {
     filter: drop-shadow(4px 4px 5px rgba(0, 0, 0, 0.35));
 }
+
+footer {
+    padding: .45em;
+    background-color: #10B981;
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+}
