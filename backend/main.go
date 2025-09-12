@@ -20,6 +20,7 @@ func main() {
 
 	routes.UsersRouter(app)
 	routes.AuthRouter(app)
+	routes.PartnerRouter(app)
 
 	port := utils.GetEnv("PORT")
 	if port == "" {
