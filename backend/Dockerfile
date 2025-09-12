@@ -1,13 +1,12 @@
-# Etapa de build
-FROM golang:1.25 as builder
+FROM golang:1.25 AS builder
 WORKDIR /app
-COPY . .
+COPY go.mod go.sum ./
 RUN go mod download
-RUN go build -o server .
+COPY . .
+RUN go build -o app .
 
-# Etapa de execução
 FROM debian:bookworm-slim
 WORKDIR /app
-COPY --from=builder /app/server .
+COPY --from=builder /app/app .
 EXPOSE 8080
-CMD ["./server"]
+CMD ["./app"]
