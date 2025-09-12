@@ -6,6 +6,7 @@ import (
 	"backend/models"
 	"backend/utils"
 	"context"
+	"time"
 
 	"github.com/gofiber/fiber/v2"
 	"github.com/golang-jwt/jwt"
@@ -42,6 +43,8 @@ func Login(c *fiber.Ctx) error {
 		"email":      user.Email,
 		"rules":      user.Rules,
 		"created_at": user.CreateAt,
+		"iat": time.Now().Unix(),
+		"exp": time.Now().Add(16 * time.Hour).Unix(),
 	}
 
 	jwtSecret := utils.GetEnv("JWT_SECRET")
