@@ -64,7 +64,7 @@ func CreateUser(c *fiber.Ctx) error {
 		"INSERT INTO users(name, email, password, rules) VALUES ($1, $2, $3, $4)",
 		body.Name, body.Email, hashedPassword, body.Rules)
 		if err != nil {
-			return c.Status(fiber.StatusBadRequest).JSON(fiber.Map{"error": err.Error()})
+			return c.Status(fiber.StatusInternalServerError).JSON(fiber.Map{"error": err.Error()})
 		}
 
 	return c.Status(fiber.StatusCreated).JSON(fiber.Map{"message": "Criado com sucesso"})

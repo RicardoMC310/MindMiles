@@ -19,6 +19,7 @@ func main() {
 	app.Use(cors.New())
 
 	routes.UsersRouter(app)
+	routes.AuthRouter(app)
 
 	port := utils.GetEnv("PORT")
 	if port == "" {
