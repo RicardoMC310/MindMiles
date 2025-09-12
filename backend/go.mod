@@ -6,6 +6,7 @@ require (
 	github.com/gofiber/fiber/v2 v2.52.9
 	github.com/jackc/pgx/v5 v5.7.6
 	github.com/joho/godotenv v1.5.1
+	github.com/mvrilo/go-cpf v0.0.0-20150109121854-4113d38c8d21
 )
 
 require github.com/stretchr/testify v1.11.0 // indirect

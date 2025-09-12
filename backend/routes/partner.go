@@ -9,4 +9,5 @@ import (
 
 func PartnerRouter(app *fiber.App) {
 	app.Get("/getPartners", middlewares.JWTMiddleware, handlers.GetAllPartners)
+	app.Post("/registerPartner", middlewares.JWTMiddleware, handlers.RegisterNewPartner)
 }

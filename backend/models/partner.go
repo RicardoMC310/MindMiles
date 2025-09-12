@@ -7,4 +7,5 @@ type PartnerModel struct {
 	Tel string `json:"tel"`
 	CPF string `json:"cpf"`
 	Age int `json:"age"`
+	Password string `json:"password"`
 }

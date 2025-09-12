@@ -15,6 +15,8 @@ func main() {
 	config.Init()
 	defer config.Close()
 
+	utils.Init()
+
 	app := fiber.New()
 	app.Use(cors.New())
 

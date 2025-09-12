@@ -4,6 +4,7 @@ import (
 	"backend/config"
 	"backend/dtos"
 	"backend/models"
+	"backend/utils"
 	"context"
 
 	"github.com/gofiber/fiber/v2"
@@ -12,12 +13,11 @@ import (
 
 func GetAllUsers(c *fiber.Ctx) error {
 
-	rows, err := config.Conn.Query(context.Background(),"SELECT * FROM users")
+	rows, err := config.Conn.Query(context.Background(), "SELECT * FROM users")
 	if err != nil {
 		return c.Status(fiber.StatusInternalServerError).JSON(fiber.Map{"error": err.Error()})
 	}
 	defer rows.Close()
-
 
 	var users []models.UsersModel
 	for rows.Next() {
@@ -50,7 +50,7 @@ func CreateUser(c *fiber.Ctx) error {
 		return c.Status(fiber.StatusBadRequest).JSON(fiber.Map{"error": err.Error()})
 	}
 
-	if err := dtos.Validate.Struct(body); err != nil {
+	if err := utils.Validate.Struct(body); err != nil {
 		return c.Status(fiber.StatusBadRequest).JSON(fiber.Map{"error": err.Error()})
 	}
 
@@ -60,12 +60,12 @@ func CreateUser(c *fiber.Ctx) error {
 	}
 
 	_, err = config.Conn.Exec(
-		context.Background(), 
+		context.Background(),
 		"INSERT INTO users(name, email, password, rules) VALUES ($1, $2, $3, $4)",
 		body.Name, body.Email, hashedPassword, body.Rules)
-		if err != nil {
-			return c.Status(fiber.StatusInternalServerError).JSON(fiber.Map{"error": err.Error()})
-		}
+	if err != nil {
+		return c.Status(fiber.StatusInternalServerError).JSON(fiber.Map{"error": err.Error()})
+	}
 
 	return c.Status(fiber.StatusCreated).JSON(fiber.Map{"message": "Criado com sucesso"})
 }
