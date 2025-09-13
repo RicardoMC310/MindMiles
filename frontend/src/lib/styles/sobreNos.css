@@ -21,11 +21,11 @@
     filter: drop-shadow(4px 4px 5px rgba(0, 0, 0, 0.35));
     transition: .3s ease-in-out;
 }
-/* 
+
 .img:hover {
     transform: scale(105%) translateY(-5%) rotate(-2deg);
     filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.5));
-}  */
+} 
 
 #first-layer-about {
     display: flex;

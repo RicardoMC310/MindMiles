@@ -1,0 +1,55 @@
+#inscriptions-service {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 2em;
+}
+
+#inscriptions-service button {
+    background-color: #ebebeb;
+    padding: 1em;
+    border-radius: 15px;
+    font-size: clamp(1rem, 1.25rem, 1.5rem);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+    transition: .3s ease-in-out;
+}
+
+#inscriptions-service button:hover {
+    transform: translateY(-5%) scale(110%) rotate(-5deg);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+}
+
+#first-layer-service {
+    padding: 2em;
+}
+
+#first-layer-service p {
+    font-size: clamp(1rem, 1.5rem, 1.85rem);
+}
+
+#second-layer-service {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    padding: 2em;
+}
+
+#second-layer-service img {
+    width: 45dvw;
+    min-width: 300px;
+    filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.35));
+    transition: .3s ease-in-out;
+}
+
+#second-layer-service img:hover {
+    transform: scale(110%) rotate(-5deg);
+    filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.5));
+}
+
+#second-layer-service p {
+    width: 45dvw;
+    min-width: 300px;
+    font-size: clamp(1.25rem, 1.5rem, 1.75rem);
+}
