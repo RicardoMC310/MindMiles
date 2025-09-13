@@ -96,6 +96,27 @@
     transform: translateY(-10%) scale(105%) rotate(-5deg);
 }
 
+#media-contacts {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: .45em;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+#media-contacts img {
+    width: 2dvw;
+}
+
+#media-contacts a {
+    color: darkblue;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-decoration: underline;
+}
+
 /* Responsividade adicional */
 @media (max-width: 500px) {
     #form-container-contact {

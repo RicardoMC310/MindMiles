@@ -1,9 +1,15 @@
 <script>
 	import '$lib/styles/contato.css';
     import { handlerContact } from "$lib/scripts/contato";
+	import instaIco from "$lib/assets/Insta.png";
 </script>
 
 <!-- Fazer links para redes sociais -->
+
+<div id="media-contacts">
+	<img src={instaIco} alt="icone do instagram">
+	<a href="https://www.instagram.com/mindmiles.oficial/" target="_blank">Nosso Instagram</a>
+</div>
 
 <div id="container-form-contact">
     <h1>Contate a gente!</h1>
