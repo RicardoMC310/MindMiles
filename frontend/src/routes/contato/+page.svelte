@@ -3,6 +3,8 @@
     import { handlerContact } from "$lib/scripts/contato";
 </script>
 
+<!-- Fazer links para redes sociais -->
+
 <div id="container-form-contact">
     <h1>Contate a gente!</h1>
 
