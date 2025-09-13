@@ -5,7 +5,7 @@
 </script>
 
 <div id="inscriptions-service">
-	<button onclick={() => goto('#')}>Cadastrar-se como aluno</button>
+	<button onclick={() => goto('/cadastro')}>Cadastrar-se como aluno</button>
 </div>
 
 <div id="first-layer-service">
