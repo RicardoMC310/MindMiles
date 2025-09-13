@@ -1,7 +1,6 @@
 /* Container principal do formulário */
 #container-form-contact {
-    min-height: 100vh;
-    /* corrigido de 100dvh */
+    min-height: 100vh; /* ocupa a altura total da viewport */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -12,8 +11,8 @@
 
 /* Título do formulário */
 #container-form-contact h1 {
-    padding: 1em;
-    font-size: clamp(1.5rem, 2rem, 2.25rem);
+    padding: 1em 0;
+    font-size: clamp(1.5rem, 5vw, 2.25rem);
     text-align: center;
 }
 
@@ -21,10 +20,9 @@
 #form-container-contact {
     display: flex;
     flex-direction: column;
-    width: 90vw;
-    /* ocupa 90% da largura da viewport */
+    width: 90%;
     max-width: 400px;
-    min-width: 280px;
+    min-width: 260px;
     margin: 0 auto;
     padding: 2em;
     background-color: #ebebeb;
@@ -38,7 +36,6 @@
 #form-container-contact label {
     display: block;
     margin-bottom: 0.5em;
-    text-align: left;
     font-weight: 500;
 }
 
@@ -46,84 +43,100 @@
 #form-container-contact input[type='text'],
 #form-container-contact input[type='email'],
 #form-container-contact textarea {
-    padding: 0.5em;
+    padding: 0.6em;
     border: none;
     border-radius: 10px;
     outline: none;
     box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.25);
     transition: 0.3s ease-in-out;
     width: 100%;
-    /* ocupa toda largura do container */
     box-sizing: border-box;
+    font-size: 1rem;
 }
 
 /* Foco em inputs e textarea */
 #form-container-contact input[type='text']:focus,
 #form-container-contact input[type='email']:focus,
 #form-container-contact textarea:focus {
-    outline: 1px solid black;
+    outline: 2px solid black;
     outline-offset: 1px;
     box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.35);
-    transform: translateY(-2%) scale(102.5%);
+    transform: translateY(-2%) scale(1.025);
 }
 
 /* Textarea ajustes */
 #form-container-contact textarea {
-    resize: none;
-    /* permite apenas vertical */
+    resize: none; /* permite apenas vertical */
     min-height: 100px;
 }
 
 /* Botão */
 #form-container-contact button[type='submit'] {
     background-color: #b8b8b8;
-    padding: 0.5em 1em;
+    padding: 0.6em 1em;
     border-radius: 10px;
     border: none;
     box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.25);
     transition: 0.3s ease-in-out;
     cursor: pointer;
     width: 100%;
-    /* responsivo */
     max-width: 150px;
-    /* limita largura em telas grandes */
     align-self: center;
+    font-size: 1rem;
 }
 
 /* Hover do botão */
 #form-container-contact button[type='submit']:hover {
     box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.35);
-    transform: translateY(-10%) scale(105%) rotate(-5deg);
+    transform: translateY(-5%) scale(1.05) rotate(-2deg);
 }
 
+/* Redes sociais / contatos */
 #media-contacts {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
-    padding: .45em;
+    padding: 0.5em;
     gap: 10px;
     align-items: center;
     justify-content: center;
 }
 
 #media-contacts img {
-    width: 2dvw;
+    width: 40px; /* fixo e proporcional para telas pequenas */
+    height: auto;
 }
 
 #media-contacts a {
     color: darkblue;
     font-weight: 600;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     text-decoration: underline;
+    font-size: 0.9rem;
 }
 
 /* Responsividade adicional */
-@media (max-width: 500px) {
+@media (max-width: 768px) {
     #form-container-contact {
         padding: 1.5em;
+        width: 95%;
     }
-
     #form-container-contact button[type='submit'] {
         max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    #container-form-contact {
+        padding: 1em;
+    }
+    #container-form-contact h1 {
+        font-size: 1.5rem;
+    }
+    #form-container-contact {
+        padding: 1em;
+        gap: 0.8em;
+    }
+    #media-contacts {
+        gap: 8px;
     }
 }

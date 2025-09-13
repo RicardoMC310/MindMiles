@@ -2,8 +2,16 @@
 	import '$lib/styles/app.css';
 	import '$lib/styles/header.css';
 	import favicon from '$lib/assets/brain.png';
+	import { user, token } from '$lib/store/store';
+	import { goto } from '$app/navigation';
 
 	let { children } = $props();
+
+	const logout = () => {
+		user.set(null);
+		token.set(null);
+		goto("/");
+	};
 </script>
 
 <svelte:head>
@@ -30,6 +38,21 @@
 			<li>
 				<a href="/contato">Contato</a>
 			</li>
+			{#if $user && $token}
+				<li>
+					<a href="/dashboard">Dashboard</a>
+				</li>
+				<li>
+					<a href="/#" onclick={logout}>Logout</a>
+				</li>
+			{:else}
+				<li>
+					<a href="/login">Login</a>
+				</li>
+				<li>
+					<a href="/cadastro">Cadastrar-se</a>
+				</li>
+			{/if}
 		</ul>
 	</nav>
 </header>

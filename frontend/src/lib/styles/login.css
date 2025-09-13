@@ -1,11 +1,11 @@
-#title-cadastro {
+#title-login {
     text-align: center;
     padding: 1em;
     font-size: clamp(1rem, 1.5rem, 2rem);
     text-shadow: 4px 4px 5px rgba(0, 0, 0, 0.15);
 }
 
-#container-form-cadastro {
+#container-form-login {
     min-height: 60dvh;
     /* corrigido de 100dvh */
     display: flex;
@@ -17,7 +17,7 @@
     margin-bottom: 30px;
 }
 
-#container-form-cadastro form {
+#container-form-login form {
     display: flex;
     flex-direction: column;
     width: 90vw;
@@ -34,16 +34,15 @@
 }
 
 /* Labels */
-#container-form-cadastro form label {
+#container-form-login form label {
     display: block;
     margin-bottom: 0.5em;
     text-align: left;
     font-weight: 500;
 }
 
-#container-form-cadastro form input[type='text'],
-#container-form-cadastro form input[type='email'],
-#container-form-cadastro form input[type='password'] {
+#container-form-login form input[type='email'],
+#container-form-login form input[type='password'] {
     padding: 0.5em;
     border: none;
     border-radius: 10px;
@@ -55,23 +54,22 @@
     box-sizing: border-box;
 }
 
-#container-form-cadastro form input[type='text']:focus,
-#container-form-cadastro form input[type='email']:focus,
-#container-form-cadastro form input[type='password']:focus {
+#container-form-login form input[type='email']:focus,
+#container-form-login form input[type='password']:focus {
     outline: 2px solid black;
     outline-offset: 1px;
     box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.35);
     transform: translateY(-2%) scale(1.025);
 }
 
-#container-form-cadastro form a {
+#container-form-login form a {
     color: darkblue;
     font-weight: 600;
     letter-spacing: 2px;
     text-decoration: underline;
 }
 
-#container-form-cadastro form button[type='submit'] {
+#container-form-login form button[type='submit'] {
     background-color: #b8b8b8;
     padding: 0.5em 1em;
     border-radius: 10px;
@@ -87,7 +85,7 @@
 }
 
 /* Hover do botão */
-#container-form-cadastro form button[type='submit']:hover {
+#container-form-login form button[type='submit']:hover {
     box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.35);
     transform: translateY(-10%) scale(105%) rotate(-5deg);
 }
