@@ -54,6 +54,8 @@ Somos a empresa que cuida da sua educação! 🎓💡
 3. Rodar o projeto
    - Navegue até a pasta do backend e siga as instruções de build e run do Go.
 
+---
+
 ## FrontEnd
 
 ### Linguagens utilizadas
