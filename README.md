@@ -53,3 +53,8 @@ Somos a empresa que cuida da sua educação! 🎓💡
    git clone <url-do-repositorio>
 3. Rodar o projeto
    - Navegue até a pasta do backend e siga as instruções de build e run do Go.
+
+## FrontEnd
+### Linguagens feitas
+  1. Svelte
+     - *HTML*: Estrutura principal para o svelte trabalhar ![app.html](./frontend/scr/app.html)
