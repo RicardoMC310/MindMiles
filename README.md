@@ -63,3 +63,7 @@ Somos a empresa que cuida da sua educação! 🎓💡
    - **CSS**: Usado para dar vida a o site, dando estilos únicos à ele ![dir css](./frontend/src/lib/styles)
    - **JS**: Usado nessa etapa para comunicação com o BackEnd ![dir js](./frontend/src/lib/scripts)
    - **SVELTE**: Linguagem própria do svelte, que permite escrever _HTML_, _CSS_(nn utilizado, pois foi a parte) e _JS_ ![dir routes](./frontend/src/routes)
+
+### Aonde eu testo?
+  1. Também já em producão, e está disponível em:
+     - link: ![https://mindmiles-5fhmuml29-ricardomc310s-projects.vercel.app](https://mindmiles-5fhmuml29-ricardomc310s-projects.vercel.app)
