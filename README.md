@@ -59,5 +59,5 @@ Somos a empresa que cuida da sua educação! 🎓💡
 ### Linguagens utilizadas
 
 1. **Svelte**  
-   - **HTML**: Estrutura principal para o Svelte trabalhar  
-     ![app.html](./frontend/src/app.html)
+   - **HTML**: Estrutura principal para o Svelte trabalhar ![app.html](./frontend/src/app.html)
+   - **CSS**: Usado para dar vida a o site, dando estilos únicos à ele ![dir css](./frontend/src/lib/styles)
