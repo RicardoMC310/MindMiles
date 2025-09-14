@@ -55,6 +55,9 @@ Somos a empresa que cuida da sua educação! 🎓💡
    - Navegue até a pasta do backend e siga as instruções de build e run do Go.
 
 ## FrontEnd
-### Linguagens feitas
-  1. Svelte
-     - *HTML*: Estrutura principal para o svelte trabalhar ![app.html](./frontend/scr/app.html)
+
+### Linguagens utilizadas
+
+1. **Svelte**  
+   - **HTML**: Estrutura principal para o Svelte trabalhar  
+     ![app.html](./frontend/src/app.html)
