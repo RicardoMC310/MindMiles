@@ -75,5 +75,6 @@ Somos a empresa que cuida da sua educação! 🎓💡
      - entrar na pasta frontend e executar os seguintes comandos:
        1. `npm install`
        2. `npm run dev -- --open`
-          - Fará com que abra no navegador padrão, se não abrir so entrar no navegador e digitar `http://localhost:5173`
+          - Fará com que abra no navegador padrão.
+          - se não abrir só entrar no navegador e digitar `http://localhost:5173`
   
