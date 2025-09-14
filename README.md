@@ -72,6 +72,8 @@ Somos a empresa que cuida da sua educação! 🎓💡
   1. Tenha o *NodeJS* instalado:
      - Link de download: [Download do NodeJS](https://nodejs.org/pt/download)
   2. Com o repositório já clonado:
-     - entrar na pasta frontend e executar o seguinte comando:
-       - `npm run start -- --open`
+     - entrar na pasta frontend e executar os seguintes comandos:
+       1. `npm install`
+       2. `npm run dev -- --open`
+          - Fará com que abra no navegador padrão, se não abrir so entrar no navegador e digitar `http://localhost:5173`
   
