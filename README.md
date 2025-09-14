@@ -52,4 +52,4 @@ Somos a empresa que cuida da sua educação! 🎓💡
    ```bash
    git clone <url-do-repositorio>
 3. Rodar o projeto
-  -  Navegue até a pasta do backend e siga as instruções de build e run do Go.
+   - Navegue até a pasta do backend e siga as instruções de build e run do Go.
