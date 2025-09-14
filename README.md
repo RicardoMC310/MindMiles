@@ -67,3 +67,11 @@ Somos a empresa que cuida da sua educação! 🎓💡
 ### Aonde eu testo?
   1. Também já em producão, e está disponível em:
      - link: [![https://mindmiles-5fhmuml29-ricardomc310s-projects.vercel.app](https://mindmiles-5fhmuml29-ricardomc310s-projects.vercel.app)](https://mindmiles-5fhmuml29-ricardomc310s-projects.vercel.app)
+
+### E como executo na minha máquina?
+  1. Tenha o *NodeJS* instalado:
+     - Link de download: [Download do NodeJS](https://nodejs.org/pt/download)
+  2. Com o repositório já clonado:
+     - entrar na pasta frontend e executar o seguinte comando:
+       - `npm run start -- --open`
+  
