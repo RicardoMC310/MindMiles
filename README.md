@@ -39,3 +39,7 @@ Somos a empresa que cuida da sua educação!
    - **Retorno:**
      - `token`: token codificado em JWT para rotas protegidas  
      - `user`: dados básicos do usuário
+
+#### Como testo na minha máquina?
+1. Instalar o `Golang` na sua máquina.
+  - link: ![site para download do Golang](https://go.dev/doc/install)
