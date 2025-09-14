@@ -68,7 +68,7 @@ Somos a empresa que cuida da sua educação! 🎓💡
 
 ### Aonde eu testo?
   1. Também já em producão, e está disponível em:
-     - link: [![https://mindmiles-5fhmuml29-ricardomc310s-projects.vercel.app](https://mindmiles-5fhmuml29-ricardomc310s-projects.vercel.app)](https://mindmiles-5fhmuml29-ricardomc310s-projects.vercel.app)
+     - link: [https://mindmiles-ldqr1pyy8-ricardomc310s-projects.vercel.app](https://mindmiles-ldqr1pyy8-ricardomc310s-projects.vercel.app)
 
 ### E como executo na minha máquina?
   1. Tenha o *NodeJS* instalado:
