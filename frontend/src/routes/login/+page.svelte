@@ -28,7 +28,7 @@
 		<input type="email" name="email" min="2" placeholder="your email here" required />
 
 		<label for="password">Password:</label>
-		<input type="password" name="password" min="8" required />
+		<input type="password" name="password" min="8" placeholder="your password here" required />
 
 		<a href="/cadastro">Não tem conta?</a>
 
