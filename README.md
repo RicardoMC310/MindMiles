@@ -6,7 +6,7 @@ Somos a empresa que cuida da sua educação! 🎓💡
 
 -------
 
-*Etec*: Dr. Geraldo Rodrigues Jośe Rodrigues Alckmin
+*Etec*: Dr. Geraldo Jośe Rodrigues Alckmin
 
 *Integrantes*:
 - Ricardo Matos Costa 1º DS/AMS
