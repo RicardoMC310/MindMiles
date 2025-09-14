@@ -61,3 +61,5 @@ Somos a empresa que cuida da sua educação! 🎓💡
 1. **Svelte**  
    - **HTML**: Estrutura principal para o Svelte trabalhar ![app.html](./frontend/src/app.html)
    - **CSS**: Usado para dar vida a o site, dando estilos únicos à ele ![dir css](./frontend/src/lib/styles)
+   - **JS**: Usado nessa etapa para comunicação com o BackEnd ![dir js](./frontend/src/lib/scripts)
+   - **SVELTE**: Linguagem própria do svelte, que permite escrever _HTML_, _CSS_(nn utilizado, pois foi a parte) e _JS_ ![dir routes](./frontend/src/routes)
