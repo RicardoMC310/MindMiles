@@ -15,7 +15,7 @@ Somos a empresa que cuida da sua educação! 🎓💡
 
 #### Onde testar?
 - Nosso *BackEnd* já está em produção! Você pode testá-lo separadamente:  
-  - 🌐 [Acesse aqui](https://indiles-ricardomc3107728-byk1p9cq.leapcell.dev)
+  - 🌐 [https://indiles-ricardomc3107728-byk1p9cq.leapcell.dev](https://indiles-ricardomc3107728-byk1p9cq.leapcell.dev)
 
 #### Entrypoints disponíveis 🔑
 
