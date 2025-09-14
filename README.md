@@ -76,5 +76,5 @@ Somos a empresa que cuida da sua educação! 🎓💡
        1. `npm install`
        2. `npm run dev -- --open`
           - Fará com que abra no navegador padrão.
-          - se não abrir só entrar no navegador e digitar `http://localhost:5173`
+          - Se não abrir só entrar no navegador e digitar `http://localhost:5173`
   
