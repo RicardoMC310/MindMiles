@@ -4,7 +4,7 @@ export async function handlerCadastro(event) {
         let inputEmail = document.querySelector("#container-form-cadastro input[type='email']");
         let inputPasswd = document.querySelector("#container-form-cadastro input[type='password']");
 
-        const data = await fetch("https://mindmiles.onrender.com/createUser", {
+        const data = await fetch("https://indiles-ricardomc3107728-byk1p9cq.leapcell.dev/createUser", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({

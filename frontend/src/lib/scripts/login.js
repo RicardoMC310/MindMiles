@@ -7,7 +7,7 @@ export async function handlerLogin(event) {
             return {error: "Dados vazios!"};
         }
 
-        const data = await fetch("https://mindmiles.onrender.com/login", {
+        const data = await fetch("https://indiles-ricardomc3107728-byk1p9cq.leapcell.dev/login", {
             method: "POST",
             headers: {"Content-Type": "application/json"},
             body: JSON.stringify({
