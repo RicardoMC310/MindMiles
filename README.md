@@ -9,8 +9,33 @@ Somos a empresa que cuida da sua educação!
 ### BackEnd
 
 #### Linguagem de escolha
-- Usando a linguagem _GO_ pela sua eficiência e praticidade!
+- Usamos a linguagem _Go_ pela sua eficiência e praticidade.
 
 #### Onde testar?
-- Meu *BackEnd* já está em produção! Você pode testá-lo a parte a partir da URL:
+- Meu *BackEnd* já está em produção! Você pode testá-lo separadamente a partir da URL:  
   - [https://indiles-ricardomc3107728-byk1p9cq.leapcell.dev](https://indiles-ricardomc3107728-byk1p9cq.leapcell.dev)
+
+#### Entrypoints disponíveis
+1. **getUsers**  
+   - Permite visualizar todos os usuários cadastrados no sistema.  
+   - **Observações:** Não requer parâmetros nem body.
+
+2. **createUser**  
+   - Permite registrar um novo usuário.  
+   - **Body esperado:**
+     - `name`: string, entre 2 e 255 caracteres  
+     - `email`: string, deve ser um e-mail válido  
+     - `password`: string, no mínimo 8 caracteres  
+     - `rules`: tipo de cadastro
+       1. **Admin** - Pode realizar todas as ações  
+       2. **Teacher** (próximas versões) - Pode criar tarefas para seus alunos  
+       3. **Student** - Pode realizar suas tarefas e futuramente trocar por cursos de parceiros
+
+3. **login**  
+   - Permite acessar o sistema.  
+   - **Body esperado:**
+     - `email`: string, deve ser válido  
+     - `password`: string, mínimo 8 caracteres alfanuméricos  
+   - **Retorno:**
+     - `token`: token codificado em JWT para rotas protegidas  
+     - `user`: dados básicos do usuário
