@@ -4,7 +4,19 @@
 
 Somos a empresa que cuida da sua educação! 🎓💡
 
----
+-------
+
+*Etec*: Dr. Geraldo Rodrigues Jośe Rodrigues Alckmin
+*Integrantes*:
+- Ricardo Matos Costa 1º DS/AMS
+- Mariana Peres Silva 1º DS/AMS
+- Nicolas Luis da Silva 1º DS/AMS
+*Qual a nossa proposta:*
+- A nossa proposta é ajudar os estudantes de todo o país a conseguir se adaptar melhor com a sua forma de aprendizado.
+- Com auxilio da nossa aplicação, o estudante terá mais oportunidade de entender e compreender aquela disciplina.
+- Pois terá acesso a várias atividades. além de recompensas. E é claro, podendo tirar dúvidas com outros alunos e professores.
+
+-------
 
 ## Como nosso site foi feito?
 
@@ -52,7 +64,7 @@ Somos a empresa que cuida da sua educação! 🎓💡
    ```bash
    git clone <url-do-repositorio>
 3. Rodar o projeto
-   - Navegue até a pasta do backend e siga as instruções de build e run do Go.
+   - Navegue até a pasta do backend e rode `go run main.go`
 
 -------
 
