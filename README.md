@@ -41,5 +41,5 @@ Somos a empresa que cuida da sua educação!
      - `user`: dados básicos do usuário
 
 #### Como testo na minha máquina?
-1. Instalar o `Golang` na sua máquina.
-  - link: ![site para download do Golang](https://go.dev/doc/install)
+  1. Instalar o `Golang` na sua máquina.
+    - link: [![site para download do Golang](https://go.dev/doc/install)](https://go.dev/doc/install)
